@@ -1,0 +1,52 @@
+<!DOCTYPE html lang="pt-br">
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>pergunta</title>
+    <link rel="stylesheet" href="Estilo.css" type="text/css"/>
+    <style type="text/css">
+        h1{color: red;}/*estilo incorporado*/
+        body{background-color:#ffffcc;}
+    </style>
+</head>
+<body!Comentario-->
+<p># Digital Innovation One</p>
+
+<p>Código criado para utilização junto a plataforma da Digital Innovation One</p>
+
+<p align="center"><img src="./DIO.png" width="500"></p>
+
+<p>## Desafio GCP Dataproc</p>
+
+<p>O desafio faz parte do curso na plataforma da Digital Innovation One:</p>
+
+<p>__*Criando um ecossitema Hadoop totalmente gerenciado com Google Cloud Platform*__</p>
+
+<p>O desafio consiste em efetuar um processamento de dados utilizando o produto Dataproc do GCP. Esse processamento irá efetuar a contahem das palavras de um livro e informar quantas vezes cada palavra aparece no mesmo.</p>
+
+<p>---</p>
+
+<p>### Etapas do Desafio</p>
+
+<p>1. Criar um bucket no Cloud Storage</p>
+<p>1. Atualizar o arquivo ```contador.py``` com o nome do Bucket criado nas linhas que contém ```{SEU_BUCKET}```.</p>
+<p>1. Fazer o upload dos arquivos ```contador.py``` e ```livro.txt``` para o bucket criado (instruções abaixo)</p>
+<p>   - https://cloud.google.com/storage/docs/uploading-objects</p>
+
+<p>1. Utilizar o código em um cluster Dataproc, executando um Job do tipo PySpark chamando ```gs://{SEU_BUCKET}/contador.py```</p>
+<p>1. O Job irá gerar uma pasta no bucket chamada ```resultado```. Dentro dessa pasta o arquivo ```part-00000``` irá conter a lista de palavras e quantas vezes ela é repetida em todo o livro.</p>
+
+<p>### Entrega do Resultado</p>
+
+<p>1. Criar um repositório no GitHub.</p>
+<p>2. Criar um arquivo chamado ```resultado.txt```. Dentro desse arquivo, colocar as 10 palavras que mais são usadas no livro, de acordo com o resultado do Job.</p>
+<p>3. Inserir os arquivo ```resultado.txt``` e ```part-00000``` no repositório e informar na plataforma da Digital Innovation One.</p>
+
+<p>---</p>
+
+<p>### Considerações Finais</p>
+
+<p>NOTA: Se o Job mostrar um WARN de Interrupt, basta ignorar. Existe um bug no Hadoop que é conhecido. Isso não impacta no processamento.</p>
+
+</body>
+</html>
